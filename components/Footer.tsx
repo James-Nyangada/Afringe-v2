@@ -11,15 +11,17 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Col */}
           <div className="flex flex-col gap-6">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="relative flex items-center justify-center rounded-xl bg-white/95 p-2 shadow-lg">
-                <Image 
-                  src="/logo.png" 
-                  alt="Afringe Logo" 
-                  width={200} 
-                  height={80} 
-                  className="h-10 w-auto object-contain"
-                />
+            <Link href="/" className="flex items-center gap-2 max-w-fit">
+              <div className="relative flex items-center justify-center rounded-xl bg-transparent">
+                <div className="relative w-44 h-12 md:w-56 md:h-14 flex items-center justify-center">
+                  <Image 
+                    src="/Afringe limited logo.png" 
+                    alt="Afringe Logo" 
+                    width={500}
+                    height={500}
+                    className="h-full w-auto object-contain scale-[2.4] md:scale-[3] pointer-events-none origin-center"
+                  />
+                </div>
               </div>
             </Link>
             <p className="font-mono text-sm leading-relaxed text-white/60">
@@ -34,22 +36,19 @@ export function Footer() {
             <h4 className="mb-6 font-sans text-lg font-bold">Services</h4>
             <ul className="flex flex-col gap-4 font-mono text-sm text-white/60">
               <li className="transition-colors hover:text-azure">
-                <Link href="#">Business Automation</Link>
+                <Link href="/services/business-automation">Business Automation</Link>
               </li>
               <li className="transition-colors hover:text-azure">
-                <Link href="#">Cybersecurity Solutions</Link>
+                <Link href="/services/web-development-hosting">Web & Hosting Solutions</Link>
               </li>
               <li className="transition-colors hover:text-azure">
-                <Link href="#">IT Consulting Services</Link>
+                <Link href="/services/data-privacy-compliance">Data Privacy Compliance</Link>
               </li>
               <li className="transition-colors hover:text-azure">
-                <Link href="#">Managed IT Services</Link>
+                <Link href="/services/endpoint-cybersecurity">Endpoint Cybersecurity</Link>
               </li>
               <li className="transition-colors hover:text-azure">
-                <Link href="#">Cloud Computing Services</Link>
-              </li>
-              <li className="transition-colors hover:text-azure">
-                <Link href="#">Data Privacy Compliance</Link>
+                <Link href="/services/cyber-awareness-training">Cyber Awareness Training</Link>
               </li>
             </ul>
           </div>
@@ -59,16 +58,16 @@ export function Footer() {
             <h4 className="mb-6 font-sans text-lg font-bold">Company</h4>
             <ul className="flex flex-col gap-4 font-mono text-sm text-white/60">
               <li className="transition-colors hover:text-azure">
-                <Link href="#about-us">About Us</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li className="transition-colors hover:text-azure">
-                <Link href="#our-services">Our Services</Link>
+                <Link href="/services">Our Services</Link>
               </li>
               <li className="transition-colors hover:text-azure">
-                <Link href="#careers">Careers</Link>
+                <Link href="/projects">Our Projects</Link>
               </li>
               <li className="transition-colors hover:text-azure">
-                <Link href="#contact-us">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>

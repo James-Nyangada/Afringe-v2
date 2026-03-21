@@ -46,8 +46,8 @@ export function AboutIntro() {
         {/* Left: Image & Badge */}
         <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.5rem] lg:max-w-none">
           <Image
-            src="https://picsum.photos/seed/office-tech/800/1000"
-            alt="Office Technology"
+            src="/tech-setup.png"
+            alt="Office Technology Setup"
             fill
             className="object-cover"
             referrerPolicy="no-referrer"
@@ -56,9 +56,9 @@ export function AboutIntro() {
           {/* Badge */}
           <div className="absolute bottom-8 right-8 flex h-40 w-40 flex-col items-center justify-center rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl text-white shadow-2xl">
             <div className="badge-pulse absolute inset-0 rounded-2xl border border-white/40" />
-            <span className="font-sans text-4xl font-bold">25+</span>
+            <span className="font-sans text-4xl font-bold">24/7</span>
             <span className="mt-2 text-center font-mono text-xs uppercase tracking-wider text-white/80">
-              Years Of<br />Experience
+              Availability
             </span>
           </div>
         </div>

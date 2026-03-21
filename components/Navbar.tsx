@@ -71,15 +71,17 @@ export function Navbar({ theme = "light" }: { theme?: "light" | "dark" }) {
         style={{ width: "100%" }}
       >
         <Link href="/" className="flex items-center gap-2">
-          <div className={`relative flex items-center justify-center rounded-xl p-2 transition-all duration-300 ${theme === "dark" && !isScrolled ? "bg-white/95 shadow-lg" : "bg-transparent mix-blend-multiply"}`}>
-            <Image 
-              src="/logo.png" 
-              alt="Afringe Logo" 
-              width={200} 
-              height={80} 
-              className="h-10 w-auto object-contain"
-              priority
-            />
+          <div className="relative flex items-center justify-center rounded-xl transition-all duration-300 bg-transparent flex-shrink-0">
+            <div className="relative w-40 h-10 md:w-52 md:h-12 flex items-center justify-center">
+              <Image 
+                src="/Afringe limited logo.png" 
+                alt="Afringe Logo" 
+                width={500}
+                height={500}
+                className="h-full w-auto object-contain scale-[2.2] md:scale-[2.8] pointer-events-none origin-center"
+                priority
+              />
+            </div>
           </div>
         </Link>
 

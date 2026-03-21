@@ -9,19 +9,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 const team = [
   {
-    name: "James Nyabande",
-    role: "Chief Executive Officer (CEO)",
-    image: "https://picsum.photos/seed/ceo/600/800",
+    name: "James Nyangada",
+    role: "Director Business Systems Automation",
+    image: "/james.jpeg",
   },
   {
-    name: "Mark Nyabande",
-    role: "Chief Operations Officer (COO)",
-    image: "https://picsum.photos/seed/coo/600/800",
+    name: "Mark Nyangada",
+    role: "Director Infrastructure Services",
+    image: "/mark.jpeg",
   },
   {
-    name: "James Ochieng",
-    role: "Software Developer",
-    image: "https://picsum.photos/seed/dev/600/800",
+    name: "James Ojwang",
+    role: "Director Operations",
+    image: "/james2.jpeg",
   },
 ];
 
@@ -61,7 +61,7 @@ export function Team() {
           {team.map((member, i) => (
             <div
               key={i}
-              className="team-card group relative aspect-[3/4] w-full overflow-hidden rounded-[2.5rem] bg-titanium"
+              className="team-card group relative aspect-square w-full overflow-hidden rounded-[2.5rem] bg-titanium"
             >
               <Image
                 src={member.image}

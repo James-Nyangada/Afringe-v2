@@ -102,13 +102,13 @@ export function AboutSolutions() {
         {/* Right: Parallax Collage */}
         <div className="relative h-[600px] w-full order-1 lg:order-2">
           <div className="parallax-img-1 absolute left-0 top-0 h-[300px] w-[60%] overflow-hidden rounded-[2rem] shadow-xl z-10">
-            <Image src="https://picsum.photos/seed/collab1/600/400" alt="Collaboration" fill className="object-cover" referrerPolicy="no-referrer" />
+            <Image src="/image-1.jpg" alt="Collaboration" fill className="object-cover" referrerPolicy="no-referrer" />
           </div>
           <div className="parallax-img-2 absolute right-0 top-[20%] h-[350px] w-[50%] overflow-hidden rounded-[2rem] shadow-xl z-20">
-            <Image src="https://picsum.photos/seed/collab2/500/600" alt="Collaboration" fill className="object-cover" referrerPolicy="no-referrer" />
+            <Image src="/data-center.png" alt="Collaboration" fill className="object-cover" referrerPolicy="no-referrer" />
           </div>
           <div className="parallax-img-3 absolute bottom-0 left-[10%] h-[250px] w-[55%] overflow-hidden rounded-[2rem] shadow-xl z-30">
-            <Image src="https://picsum.photos/seed/collab3/600/400" alt="Collaboration" fill className="object-cover" referrerPolicy="no-referrer" />
+            <Image src="/abouthero.png" alt="Collaboration" fill className="object-cover" referrerPolicy="no-referrer" />
           </div>
         </div>
 

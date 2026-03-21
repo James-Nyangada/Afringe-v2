@@ -9,8 +9,17 @@ import { MagneticButton } from "@/components/MagneticButton";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import * as LucideIcons from "lucide-react";
+import {
+  Database, ShoppingCart, Users, Code, Gauge, Server,
+  Search, ShieldCheck, Activity, Lock, ShieldAlert, Eye,
+  MailWarning, BookOpen, BarChart, CheckCircle, ArrowUpRight
+} from "lucide-react";
 
+const IconMap: Record<string, any> = {
+  Database, ShoppingCart, Users, Code, Gauge, Server,
+  Search, ShieldCheck, Activity, Lock, ShieldAlert, Eye,
+  MailWarning, BookOpen, BarChart, CheckCircle, ArrowUpRight
+};
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ServiceDetail() {
@@ -229,7 +238,7 @@ export default function ServiceDetail() {
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {service.capabilities.map((cap, index) => {
-              const IconComponent = (LucideIcons as any)[cap.icon] || LucideIcons.CheckCircle;
+              const IconComponent = IconMap[cap.icon] || CheckCircle;
               return (
                 <div
                   key={index}
@@ -297,7 +306,7 @@ export default function ServiceDetail() {
               <MagneticButton>
                 <span className="flex items-center gap-2">
                   Initiate Consultation Protocol
-                  <LucideIcons.ArrowUpRight className="h-5 w-5" />
+                  <ArrowUpRight className="h-5 w-5" />
                 </span>
               </MagneticButton>
             </Link>

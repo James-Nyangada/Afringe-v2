@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Link from "next/link";
+import Image from "next/image";
 
 const TAGS = [
   "Software Development",
@@ -49,16 +50,15 @@ export function AboutHero() {
   return (
     <div ref={containerRef} className="relative w-full flex flex-col">
       <section className="relative flex min-h-[60dvh] w-full flex-col items-center justify-center overflow-hidden bg-midnight pt-32 pb-20 text-white">
-        {/* Particle Network Overlay (Simulated with CSS/SVG) */}
-        <div className="absolute inset-0 z-0 opacity-20">
-          <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/abouthero.png"
+            alt="About us hero background"
+            fill
+            className="object-cover opacity-40"
+            priority
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight" />
         </div>
 

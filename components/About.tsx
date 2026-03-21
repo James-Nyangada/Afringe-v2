@@ -51,7 +51,7 @@ export function About() {
         {/* Left: Image & Badge */}
         <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-[2.5rem] lg:max-w-none">
           <Image
-            src="https://picsum.photos/seed/professionals/800/800"
+            src="/work-setup.png"
             alt="Professionals in office"
             fill
             className="object-cover"
@@ -61,9 +61,9 @@ export function About() {
           {/* Badge */}
           <div className="absolute bottom-8 left-8 flex h-32 w-32 flex-col items-center justify-center rounded-full bg-midnight text-white shadow-2xl">
             <div className="badge-border absolute inset-0 rounded-full border-2 border-azure" />
-            <span className="font-sans text-3xl font-bold">25+</span>
+            <span className="font-sans text-3xl font-bold">4</span>
             <span className="font-mono text-[10px] uppercase tracking-wider text-titanium">
-              Years Exp.
+              Projects <br/> Complete.
             </span>
           </div>
         </div>

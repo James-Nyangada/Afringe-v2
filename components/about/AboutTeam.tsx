@@ -8,17 +8,17 @@ const team = [
   {
     name: "James Nyangada",
     role: "Director Systems & Innovation",
-    image: "https://picsum.photos/seed/jamesn/600/800",
+    image: "/james.jpeg",
   },
   {
     name: "Mark Nyangada",
     role: "Director Infrastructure Services",
-    image: "https://picsum.photos/seed/markn/600/800",
+    image: "/mark.jpeg",
   },
   {
     name: "James Oywang",
     role: "Director Operations",
-    image: null, // Silhouette
+    image: "/james2.jpeg",
   },
 ];
 
@@ -37,7 +37,7 @@ export function AboutTeam() {
           {team.map((member, i) => (
             <div
               key={i}
-              className="group relative aspect-[3/4] w-full overflow-hidden rounded-[2.5rem] bg-titanium"
+              className="group relative aspect-square w-full overflow-hidden rounded-[2.5rem] bg-titanium"
             >
               {member.image ? (
                 <Image

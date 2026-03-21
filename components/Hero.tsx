@@ -56,21 +56,19 @@ export function Hero() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://picsum.photos/seed/cloud-network/1920/1080"
-            alt="Digital Globe and Cloud Infrastructure"
+            src="/office-work.png"
+            alt="Afringe Hero Digital Transformation"
             fill
-            className="object-cover opacity-40"
+            className="object-cover"
             priority
-            referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white" />
         </div>
 
         <div
           ref={textRef}
           className="relative z-10 flex max-w-5xl flex-col items-center px-6 text-center mt-32"
         >
-          <p className="hero-element mb-12 font-mono text-sm uppercase tracking-widest text-azure">
+          <p className="hero-element mb-12 font-mono text-sm uppercase tracking-widest text-black">
             A strategy to make your strategic technology solutions partner
           </p>
           <h1 className="hero-element mb-12 flex flex-col items-center gap-4 font-sans text-5xl font-bold tracking-tight text-midnight md:text-7xl lg:text-8xl">
@@ -87,12 +85,12 @@ export function Hero() {
       </section>
 
       {/* Animated Ticker - Moved below the hero section */}
-      <div className="hero-element relative z-20 w-full overflow-hidden border-y border-black/5 bg-white py-6">
+      <div className="hero-element relative z-20 w-full overflow-hidden border-y border-black/5 bg-azure/70 py-6">
         <div className="flex w-[200vw]" ref={tickerRef}>
           {[...TAGS, ...TAGS].map((tag, i) => (
             <div
               key={i}
-              className="flex w-max items-center justify-center px-8 font-mono text-sm uppercase tracking-wider text-midnight/60"
+              className="flex w-max items-center justify-center px-8 font-mono text-sm uppercase tracking-wider text-black"
             >
               {tag}
               <span className="ml-16 inline-block h-1.5 w-1.5 rounded-full bg-azure/50" />
