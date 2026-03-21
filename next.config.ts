@@ -31,6 +31,16 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/assets/img/hero/hero2-main-img2.webp',
+        destination: '/',
+        permanent: true, // This makes it a 301 redirect
+      },
+    ];
+  },
 };
 
 export default nextConfig;
