@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import { Navbar } from "@/components/Navbar";
+
+export const metadata: Metadata = {
+  title: "Contact Afringe Limited | IT Solutions & Cybersecurity Nairobi Kenya",
+  description: "Get in touch with Afringe Limited's engineering team for IT consulting, cybersecurity audits, CCTV installation, or software development in Nairobi and across Kenya. Response within 2 hours.",
+  alternates: { canonical: 'https://www.afringelimited.co.ke/contact' }
+};
 import { Footer } from "@/components/Footer";
 import { ContactHero } from "@/components/contact/ContactHero";
 import { ContactIntake } from "@/components/contact/ContactIntake";

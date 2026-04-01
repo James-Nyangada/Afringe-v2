@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import { Navbar } from "@/components/Navbar";
+
+export const metadata: Metadata = {
+  title: "IT Projects & Case Studies in Kenya | Afringe Limited Portfolio",
+  description: "View Afringe's enterprise IT deployments — from zero-trust cybersecurity for banks to cloud infrastructure scaling and business automation for logistics firms in Kenya.",
+  alternates: { canonical: 'https://www.afringelimited.co.ke/projects' }
+};
 import { Footer } from "@/components/Footer";
 import { ProjectsHero } from "@/components/projects/ProjectsHero";
 import { ProjectsLedger } from "@/components/projects/ProjectsLedger";

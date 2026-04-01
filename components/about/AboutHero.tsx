@@ -54,7 +54,7 @@ export function AboutHero() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/abouthero.png"
-            alt="About us hero background"
+            alt="Afringe Limited IT company team Nairobi Kenya"
             fill
             className="object-cover opacity-40"
             priority

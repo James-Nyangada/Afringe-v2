@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,8 +16,9 @@ const caseStudies = [
     tags: "Cybersecurity • Endpoint Protection",
     desc: "Deployed a zero-trust network architecture and advanced endpoint detection to neutralize targeted ransomware threats, achieving 100% compliance with NDPA and international financial regulations.",
     metric: "Zero breaches since deployment.",
-    image: "https://picsum.photos/seed/soc/1200/800",
+    image: "/tech-setup.png",
     align: "left",
+    slug: "operation-sentinel",
   },
   {
     id: "02",
@@ -24,8 +26,9 @@ const caseStudies = [
     tags: "Cloud Solutions • Web Development",
     desc: "Migrated a legacy e-commerce platform to a fully automated, auto-scaling cloud environment. Reduced page load times by 65% and maintained zero downtime during peak holiday traffic spikes.",
     metric: "Supported 500% traffic increase.",
-    image: "https://picsum.photos/seed/datacenter/1200/800",
+    image: "/abouthero.png",
     align: "right",
+    slug: "cloud-nexus",
   },
   {
     id: "03",
@@ -33,8 +36,9 @@ const caseStudies = [
     tags: "Business Automation • IT Consulting",
     desc: "Streamlined procurement and HR processes through custom business automation software, eliminating data silos and providing real-time analytics to the executive dashboard.",
     metric: "Saved 40+ hours of manual data entry weekly.",
-    image: "https://picsum.photos/seed/logistics/1200/800",
+    image: "/work-setup.png",
     align: "left",
+    slug: "automated-enterprise",
   },
 ];
 
@@ -140,10 +144,10 @@ export function ProjectsCaseStudies() {
                     {study.metric}
                   </p>
                 </div>
-                <button className="group flex items-center gap-2 font-mono text-sm uppercase tracking-widest text-white transition-colors hover:text-azure">
+                <Link href={`/projects/${study.slug}`} className="group flex items-center gap-2 font-mono text-sm uppercase tracking-widest text-white transition-colors hover:text-azure">
                   Read Case Study
                   <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                </button>
+                </Link>
               </div>
             </div>
           );

@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Settings, Globe, ShieldCheck, Radar, BookOpenCheck } from "lucide-react";
+import { Settings, Globe, ShieldCheck, Radar, BookOpenCheck, Camera, Cpu, Smartphone, Network, Briefcase, Cloud, Building } from "lucide-react";
 import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,7 +17,7 @@ const services = [
     slug: "business-automation",
   },
   {
-    title: "Website Development, Optimization, Maintenance, and Hosting",
+    title: "Website Development & Hosting",
     desc: "Comprehensive website services including development, optimization, maintenance, and hosting.",
     icon: Globe,
     colSpan: "col-span-1 md:col-span-6 lg:col-span-7", // Wider
@@ -25,24 +25,73 @@ const services = [
   },
   {
     title: "Data Privacy Compliance",
-    desc: "Ensure compliance with GDPR, CCPA, HIPAA, and other data protection regulations.",
+    desc: "Ensure compliance with GDPR, NDPA, and Kenya Data Protection Act 2019.",
     icon: ShieldCheck,
     colSpan: "col-span-1 md:col-span-4 lg:col-span-4", // Narrower
     slug: "data-privacy-compliance",
   },
   {
-    title: "Endpoint Protection and Cybersecurity Solutions",
+    title: "Endpoint Protection",
     desc: "Comprehensive cybersecurity solutions to safeguard businesses against cyber threats.",
     icon: Radar,
     colSpan: "col-span-1 md:col-span-4 lg:col-span-4", // Narrower
     slug: "endpoint-cybersecurity",
   },
   {
-    title: "Cybersecurity Awareness Trainings",
+    title: "Cybersecurity Training",
     desc: "Implement cybersecurity awareness programs to educate employees.",
     icon: BookOpenCheck,
     colSpan: "col-span-1 md:col-span-4 lg:col-span-4", // Narrower
     slug: "cyber-awareness-training",
+  },
+  {
+    title: "CCTV & Camera Installation",
+    desc: "IP camera and physical security installation across Nairobi and Kenya.",
+    icon: Camera,
+    colSpan: "col-span-1 md:col-span-6 lg:col-span-4",
+    slug: "cctv-camera-installation",
+  },
+  {
+    title: "Hardware Integration",
+    desc: "Enterprise IT hardware supply, server setup, and infrastructure deployment.",
+    icon: Cpu,
+    colSpan: "col-span-1 md:col-span-6 lg:col-span-4",
+    slug: "hardware-integration",
+  },
+  {
+    title: "Mobile App Development",
+    desc: "Native iOS, Android, and cross-platform app development in Kenya.",
+    icon: Smartphone,
+    colSpan: "col-span-1 md:col-span-6 lg:col-span-4",
+    slug: "mobile-app-development",
+  },
+  {
+    title: "Network Infrastructure",
+    desc: "Structured cabling, LAN/WAN setup, and reliable connectivity.",
+    icon: Network,
+    colSpan: "col-span-1 md:col-span-6 lg:col-span-6",
+    slug: "network-infrastructure",
+  },
+  {
+    title: "Managed IT Services",
+    desc: "Outsourced IT helpdesk, proactive maintenance, and strategic consulting.",
+    icon: Briefcase,
+    colSpan: "col-span-1 md:col-span-6 lg:col-span-6",
+    slug: "managed-it-services",
+  },
+  {
+    title: "Cloud Solutions",
+    desc: "AWS, Azure setup, and comprehensive cloud migration strategy.",
+    icon: Cloud,
+    colSpan: "col-span-1 md:col-span-6 lg:col-span-6",
+    slug: "cloud-solutions",
+  },
+  {
+    title: "Government IT Services",
+    desc: "Secure ICT solutions and platforms tailored for public sector operations.",
+    icon: Building,
+    colSpan: "col-span-1 md:col-span-6 lg:col-span-6",
+    slug: "government-it-services",
   },
 ];
 

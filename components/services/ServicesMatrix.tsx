@@ -106,10 +106,10 @@ export function ServicesMatrix() {
         {/* Left: Imagery Collage */}
         <div className="relative h-[600px] w-full">
           <div className="matrix-img-1 absolute left-0 top-0 h-[350px] w-[65%] overflow-hidden rounded-[2rem] shadow-xl z-10">
-            <Image src="/office-meeting.png" alt="IT Professionals" fill className="object-cover" referrerPolicy="no-referrer" />
+            <Image src="/office-meeting.png" alt="Afringe IT professionals delivering cybersecurity and managed IT services Kenya" fill className="object-cover" referrerPolicy="no-referrer" />
           </div>
           <div className="matrix-img-2 absolute right-0 top-[15%] h-[300px] w-[50%] overflow-hidden rounded-[2rem] shadow-xl z-20">
-            <Image src="/cyber-security.png" alt="Data Analysis" fill className="object-cover" referrerPolicy="no-referrer" />
+            <Image src="/cyber-security.png" alt="Cybersecurity threat monitoring and data analysis — Afringe Limited Kenya" fill className="object-cover" referrerPolicy="no-referrer" />
           </div>
           <div className="matrix-img-3 absolute bottom-0 left-[15%] h-[250px] w-[60%] overflow-hidden rounded-[2rem] shadow-xl z-30 border-4 border-white">
             <Image src="/office-work.png" alt="Dual Monitor Setup" fill className="object-cover" referrerPolicy="no-referrer" />

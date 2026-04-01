@@ -52,7 +52,7 @@ export function About() {
         <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-[2.5rem] lg:max-w-none">
           <Image
             src="/work-setup.png"
-            alt="Professionals in office"
+            alt="Business IT consulting professionals at Afringe Limited Nairobi"
             fill
             className="object-cover"
             referrerPolicy="no-referrer"

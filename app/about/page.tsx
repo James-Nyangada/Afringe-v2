@@ -1,4 +1,11 @@
+import { Metadata } from 'next';
 import { Navbar } from "@/components/Navbar";
+
+export const metadata: Metadata = {
+  title: "About Afringe Limited | Leading IT Company in Nairobi, Kenya",
+  description: "Learn about Afringe Limited — a Nairobi-based IT firm providing cybersecurity, network infrastructure, business automation, and software development to corporations and government bodies in Kenya and East Africa.",
+  alternates: { canonical: 'https://www.afringelimited.co.ke/about' }
+};
 import { Footer } from "@/components/Footer";
 import { AboutHero } from "@/components/about/AboutHero";
 import { AboutIntro } from "@/components/about/AboutIntro";

@@ -53,7 +53,7 @@ export function ContactCoordinates() {
                 </div>
                 <div>
                   <h3 className="font-sans text-xl font-semibold text-white">Nairobi, Kenya</h3>
-                  <p className="mt-1 font-mono text-sm text-white/50">Headquarters & Command Center</p>
+                  <p className="mt-1 font-mono text-sm text-white/50">The Address Building, 4th Floor<br />Muthangari Drive, Westlands</p>
                 </div>
               </div>
 
@@ -70,7 +70,7 @@ export function ContactCoordinates() {
                   <Mail className="h-6 w-6 text-azure" />
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-white/50">Email Routing</p>
-                    <p className="mt-1 font-sans font-medium text-white">info@afringe.co.ke</p>
+                    <p className="mt-1 font-sans font-medium text-white">info@afringelimited.co.ke</p>
                   </div>
                 </div>
               </div>

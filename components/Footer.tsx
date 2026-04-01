@@ -34,22 +34,19 @@ export function Footer() {
           {/* Services Col */}
           <div>
             <h4 className="mb-6 font-sans text-lg font-bold">Services</h4>
-            <ul className="flex flex-col gap-4 font-mono text-sm text-white/60">
-              <li className="transition-colors hover:text-azure">
-                <Link href="/services/business-automation">Business Automation</Link>
-              </li>
-              <li className="transition-colors hover:text-azure">
-                <Link href="/services/web-development-hosting">Web & Hosting Solutions</Link>
-              </li>
-              <li className="transition-colors hover:text-azure">
-                <Link href="/services/data-privacy-compliance">Data Privacy Compliance</Link>
-              </li>
-              <li className="transition-colors hover:text-azure">
-                <Link href="/services/endpoint-cybersecurity">Endpoint Cybersecurity</Link>
-              </li>
-              <li className="transition-colors hover:text-azure">
-                <Link href="/services/cyber-awareness-training">Cyber Awareness Training</Link>
-              </li>
+            <ul className="grid grid-cols-2 gap-x-8 gap-y-4 font-mono text-sm text-white/60">
+              <li className="transition-colors hover:text-azure"><Link href="/services/cctv-camera-installation">CCTV Installation</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/hardware-integration">Hardware Integration</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/mobile-app-development">Mobile App Development</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/network-infrastructure">Network Infrastructure</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/managed-it-services">Managed IT Services</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/cloud-solutions">Cloud Solutions</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/government-it-services">Government IT Services</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/business-automation">Business Automation</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/web-development-hosting">Web & Hosting</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/data-privacy-compliance">Data Privacy Validation</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/endpoint-cybersecurity">Cybersecurity</Link></li>
+              <li className="transition-colors hover:text-azure"><Link href="/services/cyber-awareness-training">Cyber Training</Link></li>
             </ul>
           </div>
 
@@ -79,7 +76,7 @@ export function Footer() {
               <li>Nairobi, Kenya</li>
               <li>0720837270</li>
               <li className="transition-colors hover:text-azure">
-                <a href="mailto:info@afringe.co.ke">info@afringe.co.ke</a>
+                <a href="mailto:info@afringelimited.co.ke">info@afringelimited.co.ke</a>
               </li>
               <li>Mon - Fri, 8:00am - 5:00pm</li>
             </ul>

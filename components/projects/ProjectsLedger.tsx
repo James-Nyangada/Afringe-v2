@@ -7,10 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: 150, suffix: "+", label: "Enterprise Deployments" },
-  { value: 99.99, suffix: "%", label: "Uptime Engineered", isFloat: true },
+  { value: 15, suffix: "+", label: "Enterprise Deployments" },
+  { value: 99.9, suffix: "%", label: "Uptime Engineered", isFloat: true },
   { value: 24, suffix: "/7", label: "Active Threat Monitoring" },
-  { value: 25, suffix: "+", label: "Years Combined Expertise" },
+  { value: 10, suffix: "+", label: "Years Combined Expertise" },
 ];
 
 export function ProjectsLedger() {
@@ -26,7 +26,7 @@ export function ProjectsLedger() {
 
         gsap.fromTo(
           counter,
-          { innerHTML: 0 },
+          { innerHTML: counter.innerHTML },
           {
             innerHTML: targetValue,
             duration: 2.5,
@@ -37,7 +37,7 @@ export function ProjectsLedger() {
             },
             onUpdate: function () {
               const val = Number(this.targets()[0].innerHTML);
-              this.targets()[0].innerHTML = isFloat ? val.toFixed(2) : Math.ceil(val).toString();
+              this.targets()[0].innerHTML = isFloat ? val.toFixed(1) : Math.ceil(val).toString();
             },
           }
         );
@@ -70,7 +70,7 @@ export function ProjectsLedger() {
           {stats.map((stat, i) => (
             <div key={i} className="ledger-item flex flex-col items-center text-center lg:items-start lg:text-left">
               <div className="mb-2 flex items-baseline font-sans text-5xl font-bold tracking-tight text-white md:text-6xl">
-                <span ref={(el) => { countersRef.current[i] = el; }}>0</span>
+                <span ref={(el) => { countersRef.current[i] = el; }}>{stat.isFloat ? stat.value.toFixed(1) : stat.value}</span>
                 <span className="text-azure">{stat.suffix}</span>
               </div>
               <p className="font-mono text-sm uppercase tracking-widest text-white/50">

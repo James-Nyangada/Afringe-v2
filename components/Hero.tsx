@@ -57,7 +57,7 @@ export function Hero() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/office-work.png"
-            alt="Afringe Hero Digital Transformation"
+            alt="IT solutions and cybersecurity team in Nairobi Kenya — Afringe Limited"
             fill
             className="object-cover"
             priority
@@ -68,8 +68,12 @@ export function Hero() {
           ref={textRef}
           className="relative z-10 flex max-w-5xl flex-col items-center px-6 text-center mt-32"
         >
-          <p className="hero-element mb-12 font-mono text-sm uppercase tracking-widest text-black">
-            A strategy to make your strategic technology solutions partner
+          <div className="hero-element mb-6 flex items-center justify-center gap-2 font-mono text-sm uppercase tracking-widest text-azure bg-midnight/5 px-4 py-1 rounded-full border border-midnight/10">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Nairobi, Kenya
+          </div>
+          <p className="hero-element mb-12 max-w-3xl font-mono text-sm uppercase tracking-widest text-black leading-relaxed">
+            Nairobi&apos;s trusted IT partner for cybersecurity, business automation, CCTV installation, software development, and managed IT services — serving enterprises, SMEs, and government agencies across Kenya and East Africa.
           </p>
           <h1 className="hero-element mb-12 flex flex-col items-center gap-4 font-sans text-5xl font-bold tracking-tight text-midnight md:text-7xl lg:text-8xl">
             <span>Empowering your</span>
@@ -96,6 +100,19 @@ export function Hero() {
               <span className="ml-16 inline-block h-1.5 w-1.5 rounded-full bg-azure/50" />
             </div>
           ))}
+        </div>
+      </div>
+      
+      {/* Stats Bar */}
+      <div className="w-full bg-midnight py-8 relative z-20">
+        <div className="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-x-12 gap-y-6 text-center text-white/80 font-mono text-sm uppercase tracking-widest">
+          <div className="flex items-center gap-2"><span className="text-[#00FF66] font-bold">10+</span> Years in IT</div>
+          <div className="hidden md:block w-px h-5 bg-white/20"></div>
+          <div className="flex items-center gap-2"><span className="text-[#00FF66] font-bold">50+</span> Projects Delivered</div>
+          <div className="hidden md:block w-px h-5 bg-white/20"></div>
+          <div className="flex items-center gap-2"><span className="text-[#00FF66] font-bold">24/7</span> Security Monitoring</div>
+          <div className="hidden lg:block w-px h-5 bg-white/20"></div>
+          <div className="flex items-center gap-2">Serving Government & Enterprise</div>
         </div>
       </div>
     </div>

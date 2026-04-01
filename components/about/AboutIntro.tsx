@@ -47,7 +47,7 @@ export function AboutIntro() {
         <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2.5rem] lg:max-w-none">
           <Image
             src="/tech-setup.png"
-            alt="Office Technology Setup"
+            alt="Enterprise network infrastructure setup by Afringe Limited Kenya"
             fill
             className="object-cover"
             referrerPolicy="no-referrer"
@@ -73,10 +73,17 @@ export function AboutIntro() {
             <span className="font-serif italic text-azure">Comprehensive</span>{" "}
             IT Solutions
           </h2>
-          <p className="mb-12 text-lg leading-relaxed text-midnight/70 relative">
-            Welcome to Afringe, your premier destination for cutting edge technology solutions and IT services. At Afringe, we are passionate about harnessing the power of technology to empower businesses like...
-            <span className="absolute bottom-0 right-0 w-1/3 h-full bg-gradient-to-l from-white to-transparent" />
-          </p>
+          <div className="mb-12 text-lg leading-relaxed text-midnight/70 flex flex-col gap-4">
+            <p>
+              Welcome to Afringe Limited, your premier destination for cutting-edge technology solutions and IT services in Nairobi, Kenya. Founded by James Nyangada, Mark Nyangada, and James Ojwang, we are passionate about harnessing the power of technology to empower enterprises, SMEs, and government institutions.
+            </p>
+            <p>
+              We operate with strict compliance to Kenya&apos;s Data Protection Act 2019 and are registered with the Communications Authority of Kenya. As certified partners with industry leaders like AWS, Microsoft, Cisco, and Fortinet, our robust credentials ensure enterprise-grade reliability and security in every deployment.
+            </p>
+            <p className="font-bold text-midnight text-base">
+              Industries We Serve: Banking & Finance, Government & Public Sector, Healthcare, Retail & E-commerce, Logistics & Supply Chain, NGOs, Education, and Telecommunications.
+            </p>
+          </div>
 
           {/* Skill Bars */}
           <div ref={barsRef} className="mb-12 flex flex-col gap-8">
